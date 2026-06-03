@@ -1,0 +1,6756 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "1be253f58ea3ab338ea2ffc95e103d8ff7e9009d",
+  "generatedAt": "2026-06-02T19:34:04.115Z",
+  "files": {
+    ".dockerignore": {
+      "filePath": ".dockerignore",
+      "contentHash": "f01b63323431fd0d16bd2236a6f2f65a883d856234e513c820af089db3b1822a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    ".env.example": {
+      "filePath": ".env.example",
+      "contentHash": "2f59f67363cf90a691491e39834b32b186617587671185b9f8ec2c62ba11bdd0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md": {
+      "filePath": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "contentHash": "f4dd0ae9104bd429523608bdda8921369e44eb68f7bdbaadd9009365118cbcec",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "filePath": ".github/ISSUE_TEMPLATE/config.yml",
+      "contentHash": "0b7af84e87d61889399c99d006c06879c8d1a71d4a2d401cda3af7ac37af27c3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    ".github/ISSUE_TEMPLATE/feature_request.md": {
+      "filePath": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "contentHash": "50261bfa10f52297650361a562eddcced5fdf584a06b3356ef6899ee857b67f9",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/ci.yaml": {
+      "filePath": ".github/workflows/ci.yaml",
+      "contentHash": "981f0a6bcde3cc754634dabb5c984b3a726f63ff5b251558bfca02678917c103",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/pages-sync.yaml": {
+      "filePath": ".github/workflows/pages-sync.yaml",
+      "contentHash": "5cc3da61bdd9056e04bd85b119c777925cb18996daa8f57624e156052c3151e1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    ".github/workflows/release.yaml": {
+      "filePath": ".github/workflows/release.yaml",
+      "contentHash": "d92cfcfabfa837283807991d3612a40f35b54b18bd34dcad0661e8d3d16896bb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 164,
+      "hasStructuralAnalysis": true
+    },
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "a5b85a2805e3bc3c8052ed738d0ef2b6cf539c8d2041f35a550ac506f021a0aa",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 40,
+      "hasStructuralAnalysis": false
+    },
+    "artifacthub-repo.yml": {
+      "filePath": "artifacthub-repo.yml",
+      "contentHash": "d44595572c7450d9b69cc2ff9a105f524b10c49af084169e96abdf84cd8e25f4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "CHANGELOG.md": {
+      "filePath": "CHANGELOG.md",
+      "contentHash": "ba472bc60c8db9e3d36882e89fa5d0f56d101ec7970f491870e317a4c156837f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 543,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/ai.go": {
+      "filePath": "cmd/server/ai.go",
+      "contentHash": "8420a51f90a8aaf608153a701dea20cbbd9208eb768533c94a906a2f826db3c6",
+      "functions": [
+        {
+          "name": "initLLM",
+          "params": [],
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "aiRateOK",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 22
+        },
+        {
+          "name": "aiRateDone",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "streamLLM",
+          "params": [
+            "w",
+            "r",
+            "systemPrompt",
+            "userPrompt"
+          ],
+          "exported": false,
+          "lineCount": 91
+        },
+        {
+          "name": "apiAIDiagnose",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 40
+        },
+        {
+          "name": "apiAISpotAnalysis",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "buildPodDiagnosticContext",
+          "params": [
+            "ns",
+            "podName"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 186
+        },
+        {
+          "name": "buildSpotAdvisorContext",
+          "params": [],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 129
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "bufio",
+          "specifiers": [
+            "bufio"
+          ]
+        },
+        {
+          "source": "bytes",
+          "specifiers": [
+            "bytes"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "net/url",
+          "specifiers": [
+            "url"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 568,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/audit.go": {
+      "filePath": "cmd/server/audit.go",
+      "contentHash": "e5ad692ea0b8f626385bceefaa0db73d652592b8ca3e3cf4c7b2a1deadf54669",
+      "functions": [
+        {
+          "name": "writeMessage",
+          "params": [
+            "t",
+            "data"
+          ],
+          "returnType": "error",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "writeControl",
+          "params": [
+            "t",
+            "data",
+            "deadline"
+          ],
+          "returnType": "error",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "presenceAdd",
+          "params": [
+            "pc"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "presenceRemove",
+          "params": [
+            "pc"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "snapshotAdminConns",
+          "params": [],
+          "returnType": "[]*presenceConn",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "broadcastToAdmins",
+          "params": [
+            "env"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "broadcastPresence",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "broadcastAuditEntry",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "getOnlineUsers",
+          "params": [],
+          "returnType": "[]onlineUser",
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "apiPresenceWS",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 48
+        },
+        {
+          "name": "trackUser",
+          "params": [
+            "_",
+            "_",
+            "_"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "auditRecord",
+          "params": [
+            "actor",
+            "role",
+            "action",
+            "resource",
+            "detail",
+            "ip"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "auditTrimExpired",
+          "params": [
+            "entries"
+          ],
+          "returnType": "[]auditEntry",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "auditInitPersistence",
+          "params": [],
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "auditRestore",
+          "params": [],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "auditPersist",
+          "params": [],
+          "exported": false,
+          "lineCount": 77
+        },
+        {
+          "name": "auditSync",
+          "params": [],
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "auditStartSync",
+          "params": [],
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "auditDedup",
+          "params": [
+            "a",
+            "b"
+          ],
+          "returnType": "[]auditEntry",
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "clientIP",
+          "params": [
+            "r"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "apiAudit",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 30
+        }
+      ],
+      "classes": [
+        {
+          "name": "auditEntry",
+          "methods": [],
+          "properties": [
+            "Time",
+            "Actor",
+            "Role",
+            "Action",
+            "Resource",
+            "Detail",
+            "IP"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "onlineUser",
+          "methods": [],
+          "properties": [
+            "Email",
+            "Role",
+            "LastSeen",
+            "IP"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "presenceConn",
+          "methods": [
+            "writeMessage",
+            "writeControl"
+          ],
+          "properties": [
+            "email",
+            "role",
+            "ip",
+            "conn",
+            "wmu"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "wsEnvelope",
+          "methods": [],
+          "properties": [
+            "Type",
+            "Data"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strconv",
+          "specifiers": [
+            "strconv"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "sync/atomic",
+          "specifiers": [
+            "atomic"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "github.com/gorilla/websocket",
+          "specifiers": [
+            "websocket"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/api/errors",
+          "specifiers": [
+            "k8serr"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 490,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/auth.go": {
+      "filePath": "cmd/server/auth.go",
+      "contentHash": "dd3eb3c1a7eb4d4c33c76c0c39bacb564b4862e5f518a7b5fbe7a7798d4598c2",
+      "functions": [
+        {
+          "name": "envWithFallback",
+          "params": [
+            "primary",
+            "legacy"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "loadSecretsFromAWS",
+          "params": [],
+          "exported": false,
+          "lineCount": 48
+        },
+        {
+          "name": "initAuth",
+          "params": [],
+          "exported": false,
+          "lineCount": 99
+        },
+        {
+          "name": "signSession",
+          "params": [
+            "sd"
+          ],
+          "returnType": "(string, error)",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "verifySession",
+          "params": [
+            "cookie"
+          ],
+          "returnType": "(*sessionData, error)",
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "setSessionCookie",
+          "params": [
+            "w",
+            "sd"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "clearSessionCookie",
+          "params": [
+            "w"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "callbackURL",
+          "params": [
+            "r"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "authLogin",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "authCallback",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 71
+        },
+        {
+          "name": "authLogout",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "apiMe",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "authMiddleware",
+          "params": [
+            "next"
+          ],
+          "returnType": "http.Handler",
+          "exported": false,
+          "lineCount": 51
+        },
+        {
+          "name": "requireAdmin",
+          "params": [
+            "w",
+            "r"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "isAdmin",
+          "params": [
+            "r"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 7
+        }
+      ],
+      "classes": [
+        {
+          "name": "sessionData",
+          "methods": [],
+          "properties": [
+            "Email",
+            "Role",
+            "Exp"
+          ],
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "crypto/hmac",
+          "specifiers": [
+            "hmac"
+          ]
+        },
+        {
+          "source": "crypto/rand",
+          "specifiers": [
+            "rand"
+          ]
+        },
+        {
+          "source": "crypto/sha256",
+          "specifiers": [
+            "sha256"
+          ]
+        },
+        {
+          "source": "encoding/base64",
+          "specifiers": [
+            "base64"
+          ]
+        },
+        {
+          "source": "encoding/hex",
+          "specifiers": [
+            "hex"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/aws",
+          "specifiers": [
+            "aws"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/aws/session",
+          "specifiers": [
+            "session"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/service/secretsmanager",
+          "specifiers": [
+            "secretsmanager"
+          ]
+        },
+        {
+          "source": "github.com/coreos/go-oidc/v3/oidc",
+          "specifiers": [
+            "oidc"
+          ]
+        },
+        {
+          "source": "golang.org/x/oauth2",
+          "specifiers": [
+            "oauth2"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 498,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/cache.go": {
+      "filePath": "cmd/server/cache.go",
+      "contentHash": "35c1797e66a14d4e7f335a5a248bcde8ef1f5d9e8a0925b96bf6e85163e09e76",
+      "functions": [
+        {
+          "name": "triggerRebuild",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "rebuildFromInformers",
+          "params": [],
+          "exported": false,
+          "lineCount": 188
+        },
+        {
+          "name": "refreshMetrics",
+          "params": [],
+          "exported": false,
+          "lineCount": 53
+        },
+        {
+          "name": "refresh",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "startCacheLoop",
+          "params": [],
+          "exported": false,
+          "lineCount": 73
+        }
+      ],
+      "classes": [
+        {
+          "name": "rsOwner",
+          "methods": [],
+          "properties": [
+            "Kind",
+            "Name"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "clusterCache",
+          "methods": [
+            "rebuildFromInformers",
+            "refreshMetrics",
+            "refresh"
+          ],
+          "properties": [
+            "mu",
+            "pods",
+            "events",
+            "replicasets",
+            "nodes",
+            "deployments",
+            "statefulsets",
+            "daemonsets",
+            "services",
+            "jobs",
+            "cronjobs",
+            "namespaces",
+            "ingresses",
+            "hpas",
+            "configMeta",
+            "secretMeta",
+            "nodeMetrics",
+            "podMetrics",
+            "pdbs",
+            "pvcs",
+            "pvs",
+            "storageClasses",
+            "configDrift",
+            "lastRefresh",
+            "podMetricsMap",
+            "rsOwners"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "configMeta",
+          "methods": [],
+          "properties": [
+            "Name",
+            "Namespace",
+            "Keys",
+            "Type",
+            "CreatedAt",
+            "LastModified",
+            "Version"
+          ],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/apps/v1",
+          "specifiers": [
+            "appsv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/autoscaling/v2",
+          "specifiers": [
+            "autov2"
+          ]
+        },
+        {
+          "source": "k8s.io/api/batch/v1",
+          "specifiers": [
+            "batchv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/networking/v1",
+          "specifiers": [
+            "netv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/policy/v1",
+          "specifiers": [
+            "policyv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/storage/v1",
+          "specifiers": [
+            "storagev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/labels",
+          "specifiers": [
+            "labels"
+          ]
+        },
+        {
+          "source": "k8s.io/metrics/pkg/apis/metrics/v1beta1",
+          "specifiers": [
+            "metricsapi"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/informers",
+          "specifiers": [
+            "informers"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/tools/cache",
+          "specifiers": [
+            "kcache"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 438,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/config.go": {
+      "filePath": "cmd/server/config.go",
+      "contentHash": "504af56dd61a2747779987bd2261c7a2539c6123c4fee3455af00820923f2666",
+      "functions": [
+        {
+          "name": "apiConfigDrift",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "computeConfigDrift",
+          "params": [
+            "pods",
+            "cfgMeta",
+            "secMeta"
+          ],
+          "returnType": "[]interface{}",
+          "exported": false,
+          "lineCount": 156
+        },
+        {
+          "name": "apiConfigs",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 61
+        },
+        {
+          "name": "apiConfigData",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 90
+        }
+      ],
+      "classes": [
+        {
+          "name": "cfgKey",
+          "methods": [],
+          "properties": [
+            "kind",
+            "ns",
+            "name"
+          ],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 358,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/exec.go": {
+      "filePath": "cmd/server/exec.go",
+      "contentHash": "d58f1eb4f1712f4dee5f806dce6c1ccf5d8e61de787308cbf065362f9a2d33c7",
+      "functions": [
+        {
+          "name": "wsCheckOrigin",
+          "params": [
+            "r"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "Read",
+          "params": [
+            "p"
+          ],
+          "returnType": "(int, error)",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "Write",
+          "params": [
+            "p"
+          ],
+          "returnType": "(int, error)",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "apiExec",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 60
+        }
+      ],
+      "classes": [
+        {
+          "name": "wsTerminal",
+          "methods": [
+            "Read",
+            "Write"
+          ],
+          "properties": [
+            "conn",
+            "mu"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "net/url",
+          "specifiers": [
+            "url"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "github.com/gorilla/websocket",
+          "specifiers": [
+            "websocket"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/kubernetes/scheme",
+          "specifiers": [
+            "scheme"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/tools/remotecommand",
+          "specifiers": [
+            "remotecommand"
+          ]
+        }
+      ],
+      "exports": [
+        "Read",
+        "Write"
+      ],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/helpers.go": {
+      "filePath": "cmd/server/helpers.go",
+      "contentHash": "e166f4b86a8e7af3789d2ff06c19bca2aaa1f44226948739d88ae1fae1ae0b09",
+      "functions": [
+        {
+          "name": "apiNamespaces",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "shortDur",
+          "params": [
+            "d"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "podDisplayStatus",
+          "params": [
+            "p"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "shortImage",
+          "params": [
+            "img"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 86,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/jit.go": {
+      "filePath": "cmd/server/jit.go",
+      "contentHash": "9e7d7661744e114fb0f65cb905057cdc478f4deea965aafaf595f920d9e3fe2b",
+      "functions": [
+        {
+          "name": "jitResourceStr",
+          "params": [
+            "r"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "jitApprove",
+          "params": [
+            "id",
+            "approver",
+            "ip"
+          ],
+          "returnType": "error",
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "jitDeny",
+          "params": [
+            "id",
+            "approver",
+            "ip"
+          ],
+          "returnType": "error",
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "jitInitPersistence",
+          "params": [],
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "jitRestore",
+          "params": [],
+          "exported": false,
+          "lineCount": 32
+        },
+        {
+          "name": "jitPersist",
+          "params": [],
+          "exported": false,
+          "lineCount": 63
+        },
+        {
+          "name": "jitID",
+          "params": [],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "jitFindByID",
+          "params": [
+            "id"
+          ],
+          "returnType": "*jitRequest",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "hasActiveJIT",
+          "params": [
+            "email",
+            "namespace",
+            "ownerKind",
+            "ownerName"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "requireAdminOrJIT",
+          "params": [
+            "w",
+            "r",
+            "namespace",
+            "ownerKind",
+            "ownerName"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 32
+        },
+        {
+          "name": "resolvePodOwner",
+          "params": [
+            "ns",
+            "podName"
+          ],
+          "returnType": "(string, string)",
+          "exported": false,
+          "lineCount": 28
+        },
+        {
+          "name": "jitExpiryLoop",
+          "params": [],
+          "exported": false,
+          "lineCount": 37
+        },
+        {
+          "name": "apiJITRequests",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "apiJITCreate",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 72
+        },
+        {
+          "name": "apiJITList",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 22
+        },
+        {
+          "name": "apiJITMyGrants",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "apiJITAction",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 87
+        }
+      ],
+      "classes": [
+        {
+          "name": "jitRequest",
+          "methods": [],
+          "properties": [
+            "ID",
+            "Email",
+            "Namespace",
+            "Pod",
+            "OwnerKind",
+            "OwnerName",
+            "Reason",
+            "Duration",
+            "Status",
+            "CreatedAt",
+            "ApprovedBy",
+            "ExpiresAt"
+          ],
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "crypto/rand",
+          "specifiers": [
+            "rand"
+          ]
+        },
+        {
+          "source": "encoding/hex",
+          "specifiers": [
+            "hex"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strconv",
+          "specifiers": [
+            "strconv"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/api/errors",
+          "specifiers": [
+            "k8serr"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 600,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/main.go": {
+      "filePath": "cmd/server/main.go",
+      "contentHash": "57169dd3ad28b8782924f8b4f2884ad4c02dcfe98d9f5913e72edeef1cbf8502",
+      "functions": [
+        {
+          "name": "parseLogLevel",
+          "params": [
+            "s"
+          ],
+          "returnType": "(slog.Level, bool)",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "initLogger",
+          "params": [],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "main",
+          "params": [],
+          "exported": false,
+          "lineCount": 177
+        },
+        {
+          "name": "kubeConfig",
+          "params": [],
+          "returnType": "(*rest.Config, error)",
+          "exported": false,
+          "lineCount": 28
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "path/filepath",
+          "specifiers": [
+            "filepath"
+          ]
+        },
+        {
+          "source": "runtime",
+          "specifiers": [
+            "runtime"
+          ]
+        },
+        {
+          "source": "runtime/debug",
+          "specifiers": [
+            "debug"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "golang.org/x/crypto/ssh",
+          "specifiers": [
+            "_"
+          ]
+        },
+        {
+          "source": "golang.org/x/term",
+          "specifiers": [
+            "term"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/kubernetes",
+          "specifiers": [
+            "kubernetes"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/rest",
+          "specifiers": [
+            "rest"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/tools/clientcmd",
+          "specifiers": [
+            "clientcmd"
+          ]
+        },
+        {
+          "source": "k8s.io/metrics/pkg/client/clientset/versioned",
+          "specifiers": [
+            "metricsv"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 268,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/networking.go": {
+      "filePath": "cmd/server/networking.go",
+      "contentHash": "a6b5a7dce5226ae6d1e248bc1bda3753b32e9098ff8fb6b108ef268ac2f2f318",
+      "functions": [
+        {
+          "name": "apiIngresses",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 101
+        },
+        {
+          "name": "apiIngressDescribe",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 128
+        },
+        {
+          "name": "apiServices",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 71
+        },
+        {
+          "name": "apiServiceDetail",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 142
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 463,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/nodes.go": {
+      "filePath": "cmd/server/nodes.go",
+      "contentHash": "5f17b846b0e0e2dd1295f1e81dd411b1f6b6762b10d42788c3a969871a9db2ec",
+      "functions": [
+        {
+          "name": "apiNodes",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 115
+        },
+        {
+          "name": "apiNodeAction",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 587
+        },
+        {
+          "name": "patchUnschedulable",
+          "params": [
+            "c",
+            "name",
+            "val"
+          ],
+          "returnType": "error",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/policy/v1",
+          "specifiers": [
+            "policyv1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/types",
+          "specifiers": [
+            "types"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 729,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/overview.go": {
+      "filePath": "cmd/server/overview.go",
+      "contentHash": "92ff19e782f6ce14b238d04c8ce3f3ac5ceff9b9da3fffa9310e8f08a7738dcd",
+      "functions": [
+        {
+          "name": "apiOverview",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 238
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 253,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/pods.go": {
+      "filePath": "cmd/server/pods.go",
+      "contentHash": "bd38aa14ccb61904f950cb662e42ee4033574a115492394df8381da8f0f3a6a2",
+      "functions": [
+        {
+          "name": "apiPods",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 132
+        },
+        {
+          "name": "apiPodDetail",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 307
+        },
+        {
+          "name": "apiRestartTimeline",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 82
+        },
+        {
+          "name": "restartTimelineFromProm",
+          "params": [
+            "ns",
+            "pod",
+            "podRegex",
+            "startStr",
+            "endStr",
+            "step"
+          ],
+          "returnType": "([]restartEvent, error)",
+          "exported": false,
+          "lineCount": 98
+        },
+        {
+          "name": "restartTimelineFromFallback",
+          "params": [
+            "ns",
+            "pod",
+            "podRegex",
+            "since"
+          ],
+          "returnType": "[]restartEvent",
+          "exported": false,
+          "lineCount": 129
+        }
+      ],
+      "classes": [
+        {
+          "name": "restartEvent",
+          "methods": [],
+          "properties": [
+            "Timestamp",
+            "Container",
+            "Reason",
+            "ExitCode"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "restartTimelineResponse",
+          "methods": [],
+          "properties": [
+            "Events",
+            "Source"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "bufio",
+          "specifiers": [
+            "bufio"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "regexp",
+          "specifiers": [
+            "regexp"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 789,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/prometheus.go": {
+      "filePath": "cmd/server/prometheus.go",
+      "contentHash": "b01ee898dd8998f5bd44d87a56cbfbe34bef5247a840903d88172d900f9b0ae6",
+      "functions": [
+        {
+          "name": "initPrometheus",
+          "params": [],
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "init",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "promQuery",
+          "params": [
+            "query",
+            "start",
+            "end",
+            "step"
+          ],
+          "returnType": "([]byte, error)",
+          "exported": false,
+          "lineCount": 70
+        },
+        {
+          "name": "promInstantQuery",
+          "params": [
+            "query"
+          ],
+          "returnType": "(float64, error)",
+          "exported": false,
+          "lineCount": 55
+        },
+        {
+          "name": "apiWorkloadSizing",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 151
+        },
+        {
+          "name": "apiAlerts",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 86
+        },
+        {
+          "name": "apiMetricsNode",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 88
+        },
+        {
+          "name": "apiMetricsPod",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 106
+        },
+        {
+          "name": "apiMetricsWorkload",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 206
+        },
+        {
+          "name": "promQueryParallel",
+          "params": [
+            "queries",
+            "startStr",
+            "endStr",
+            "step"
+          ],
+          "returnType": "map[string][]promMetricSeries",
+          "exported": false,
+          "lineCount": 61
+        }
+      ],
+      "classes": [
+        {
+          "name": "promCacheEntry",
+          "methods": [],
+          "properties": [
+            "data",
+            "ts"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "promMetricSeries",
+          "methods": [],
+          "properties": [
+            "Name",
+            "Values"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strconv",
+          "specifiers": [
+            "strconv"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 904,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/resources.go": {
+      "filePath": "cmd/server/resources.go",
+      "contentHash": "ab7671f22e97ae9e1acb0ee5c75ff22330946ba1c8598d1a3a5ac14fe48de770",
+      "functions": [
+        {
+          "name": "apiPDBs",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 51
+        },
+        {
+          "name": "apiCronJobHistory",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 116
+        },
+        {
+          "name": "apiCronJobTrigger",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 82
+        },
+        {
+          "name": "apiNamespaceCosts",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 135
+        },
+        {
+          "name": "estimateOnDemandHourly",
+          "params": [
+            "instanceType"
+          ],
+          "returnType": "float64",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "apiSpotInterruptions",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 284
+        },
+        {
+          "name": "apiTopologySpread",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 309
+        },
+        {
+          "name": "apiEvents",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 40
+        },
+        {
+          "name": "apiSearch",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 108
+        },
+        {
+          "name": "apiHPA",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 124
+        },
+        {
+          "name": "apiHPADetail",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 130
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "math",
+          "specifiers": [
+            "math"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/autoscaling/v2",
+          "specifiers": [
+            "autov2"
+          ]
+        },
+        {
+          "source": "k8s.io/api/batch/v1",
+          "specifiers": [
+            "batchv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 1436,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/server.go": {
+      "filePath": "cmd/server/server.go",
+      "contentHash": "b9a77433f467e0f1f894653fe9c7744983b3eda7efc0f67fbf2f1dacfa51f619",
+      "functions": [
+        {
+          "name": "corsWrap",
+          "params": [
+            "h"
+          ],
+          "returnType": "http.Handler",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "Write",
+          "params": [
+            "b"
+          ],
+          "returnType": "(int, error)",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "gzipWrap",
+          "params": [
+            "h"
+          ],
+          "returnType": "http.Handler",
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "jk8s",
+          "params": [
+            "w",
+            "err"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "je",
+          "params": [
+            "w",
+            "msg",
+            "code"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "j",
+          "params": [
+            "w",
+            "v"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "jGz",
+          "params": [
+            "w",
+            "_",
+            "v"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "ctx",
+          "params": [],
+          "returnType": "(context.Context, context.CancelFunc)",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "gzResponseWriter",
+          "methods": [
+            "Write"
+          ],
+          "properties": [
+            "gz"
+          ],
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "imports": [
+        {
+          "source": "compress/gzip",
+          "specifiers": [
+            "gzip"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/api/errors",
+          "specifiers": [
+            "k8serr"
+          ]
+        }
+      ],
+      "exports": [
+        "Write"
+      ],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/slack.go": {
+      "filePath": "cmd/server/slack.go",
+      "contentHash": "d4de9d2ebf0b3a1653915331c5855240b1ab29ed044e4997df79adcd14612553",
+      "functions": [
+        {
+          "name": "slackGetConfig",
+          "params": [],
+          "returnType": "(webhookURL, signingSecret string)",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "slackIsEnabled",
+          "params": [],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "initSlack",
+          "params": [],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "slackRestoreConfig",
+          "params": [],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "slackPersistConfig",
+          "params": [],
+          "exported": false,
+          "lineCount": 41
+        },
+        {
+          "name": "apiSlackSettings",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 89
+        },
+        {
+          "name": "slackNotifyJIT",
+          "params": [
+            "req"
+          ],
+          "exported": false,
+          "lineCount": 54
+        },
+        {
+          "name": "slackNotifyJITResult",
+          "params": [
+            "req",
+            "action",
+            "actor"
+          ],
+          "exported": false,
+          "lineCount": 34
+        },
+        {
+          "name": "slackPost",
+          "params": [
+            "url",
+            "payload"
+          ],
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "apiSlackInteract",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 140
+        },
+        {
+          "name": "verifySlackSignature",
+          "params": [
+            "headers",
+            "body",
+            "secret"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 26
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "bytes",
+          "specifiers": [
+            "bytes"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "crypto/hmac",
+          "specifiers": [
+            "hmac"
+          ]
+        },
+        {
+          "source": "crypto/sha256",
+          "specifiers": [
+            "sha256"
+          ]
+        },
+        {
+          "source": "encoding/hex",
+          "specifiers": [
+            "hex"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "net/url",
+          "specifiers": [
+            "url"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "strconv",
+          "specifiers": [
+            "strconv"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/api/errors",
+          "specifiers": [
+            "k8serr"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 499,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/sparklines.go": {
+      "filePath": "cmd/server/sparklines.go",
+      "contentHash": "5792e8e5e42294ded794bfcd48e81aa7c55221eb902499caeeb1dcf58cbf37d5",
+      "functions": [
+        {
+          "name": "record",
+          "params": [
+            "podMetricsMap"
+          ],
+          "exported": false,
+          "lineCount": 23
+        },
+        {
+          "name": "snapshot",
+          "params": [],
+          "returnType": "map[string][][2]int64",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "apiPodSparklines",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 25
+        }
+      ],
+      "classes": [
+        {
+          "name": "sparklineBuffer",
+          "methods": [
+            "record",
+            "snapshot"
+          ],
+          "properties": [
+            "mu",
+            "points",
+            "idx",
+            "count"
+          ],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "imports": [
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/spot_advisor.go": {
+      "filePath": "cmd/server/spot_advisor.go",
+      "contentHash": "24449c80eac11a2e226e27f1cf14d6b984182e2648b9cec3c1a0118cd0470e09",
+      "functions": [
+        {
+          "name": "detectRegion",
+          "params": [],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "refresh",
+          "params": [],
+          "exported": false,
+          "lineCount": 114
+        },
+        {
+          "name": "parseInstanceType",
+          "params": [
+            "instanceType"
+          ],
+          "returnType": "(baseChar string, gen int, suffix string, size string)",
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "isGraviton",
+          "params": [
+            "suffix"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "generateAlternatives",
+          "params": [
+            "instanceType"
+          ],
+          "returnType": "[]string",
+          "exported": false,
+          "lineCount": 47
+        },
+        {
+          "name": "sizeIndex",
+          "params": [
+            "s"
+          ],
+          "returnType": "int",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "generateConsolidationAlternatives",
+          "params": [
+            "instanceType"
+          ],
+          "returnType": "[]string",
+          "exported": false,
+          "lineCount": 54
+        },
+        {
+          "name": "interruptLabel",
+          "params": [
+            "r"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "startSpotAdvisorLoop",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "apiSpotAdvisor",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 463
+        }
+      ],
+      "classes": [
+        {
+          "name": "spotAdvisorEntry",
+          "methods": [],
+          "properties": [
+            "R",
+            "S"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "spotInstanceTypeInfo",
+          "methods": [],
+          "properties": [
+            "Cores",
+            "RamGB",
+            "EMR"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "spotAdvisorData",
+          "methods": [
+            "refresh"
+          ],
+          "properties": [
+            "mu",
+            "entries",
+            "typeSpecs",
+            "spotPrices",
+            "region",
+            "lastRefresh"
+          ],
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "imports": [
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "math",
+          "specifiers": [
+            "math"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strconv",
+          "specifiers": [
+            "strconv"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/aws",
+          "specifiers": [
+            "aws"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/aws/session",
+          "specifiers": [
+            "session"
+          ]
+        },
+        {
+          "source": "github.com/aws/aws-sdk-go/service/ec2",
+          "specifiers": [
+            "ec2"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 805,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/storage.go": {
+      "filePath": "cmd/server/storage.go",
+      "contentHash": "c78b8eb39ea23a60a96ccb03333341475160ec29b4eac6b33fd5e4175de1f136",
+      "functions": [
+        {
+          "name": "apiStorage",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 160
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 172,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/webhook.go": {
+      "filePath": "cmd/server/webhook.go",
+      "contentHash": "d0d4088478623d047b6c7f116ed0843b63c525c98e6aafa8654a0fa9c4dbdd7c",
+      "functions": [
+        {
+          "name": "webhookGetConfig",
+          "params": [],
+          "returnType": "webhookConfig",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "initWebhook",
+          "params": [],
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "webhookRestoreConfig",
+          "params": [],
+          "exported": false,
+          "lineCount": 41
+        },
+        {
+          "name": "webhookPersistConfig",
+          "params": [],
+          "exported": false,
+          "lineCount": 43
+        },
+        {
+          "name": "maskSecret",
+          "params": [
+            "s"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "maskURL",
+          "params": [
+            "s"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "apiWebhookSettings",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 101
+        },
+        {
+          "name": "configAcceptsEvent",
+          "params": [
+            "c",
+            "event"
+          ],
+          "returnType": "bool",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "webhookNotifyJIT",
+          "params": [
+            "event",
+            "req",
+            "actor"
+          ],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "webhookPost",
+          "params": [
+            "url",
+            "secret",
+            "event",
+            "payload"
+          ],
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "webhookSign",
+          "params": [
+            "body",
+            "secret"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "webhookConfig",
+          "methods": [],
+          "properties": [
+            "URL",
+            "Secret",
+            "Events"
+          ],
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "bytes",
+          "specifiers": [
+            "bytes"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "crypto/hmac",
+          "specifiers": [
+            "hmac"
+          ]
+        },
+        {
+          "source": "crypto/sha256",
+          "specifiers": [
+            "sha256"
+          ]
+        },
+        {
+          "source": "encoding/hex",
+          "specifiers": [
+            "hex"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "log/slog",
+          "specifiers": [
+            "slog"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/api/errors",
+          "specifiers": [
+            "k8serr"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 367,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/workloads.go": {
+      "filePath": "cmd/server/workloads.go",
+      "contentHash": "286278795ffc5173ff188fe82dab0889402bc49469f0f2e7e608ad0465899923",
+      "functions": [
+        {
+          "name": "apiWorkloads",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 230
+        },
+        {
+          "name": "buildContainerInfo",
+          "params": [
+            "ct",
+            "isInit"
+          ],
+          "returnType": "map[string]interface{}",
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "apiWorkloadAction",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 778
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "bufio",
+          "specifiers": [
+            "bufio"
+          ]
+        },
+        {
+          "source": "context",
+          "specifiers": [
+            "context"
+          ]
+        },
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "sort",
+          "specifiers": [
+            "sort"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "sync",
+          "specifiers": [
+            "sync"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "k8s.io/api/autoscaling/v2",
+          "specifiers": [
+            "autov2"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/types",
+          "specifiers": [
+            "types"
+          ]
+        },
+        {
+          "source": "k8s.io/client-go/util/retry",
+          "specifiers": [
+            "retry"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 1057,
+      "hasStructuralAnalysis": true
+    },
+    "cmd/server/yaml_editor.go": {
+      "filePath": "cmd/server/yaml_editor.go",
+      "contentHash": "a6ff8c1fc29b7e64e833902c7afb1ef566e88bbc0f20aeb579935efaa5d9b8ba",
+      "functions": [
+        {
+          "name": "apiYaml",
+          "params": [
+            "w",
+            "r"
+          ],
+          "exported": false,
+          "lineCount": 164
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "encoding/json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "fmt",
+          "specifiers": [
+            "fmt"
+          ]
+        },
+        {
+          "source": "io",
+          "specifiers": [
+            "io"
+          ]
+        },
+        {
+          "source": "net/http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "strings",
+          "specifiers": [
+            "strings"
+          ]
+        },
+        {
+          "source": "k8s.io/api/apps/v1",
+          "specifiers": [
+            "appsv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/autoscaling/v2",
+          "specifiers": [
+            "autov2"
+          ]
+        },
+        {
+          "source": "k8s.io/api/batch/v1",
+          "specifiers": [
+            "batchv1"
+          ]
+        },
+        {
+          "source": "k8s.io/api/core/v1",
+          "specifiers": [
+            "corev1"
+          ]
+        },
+        {
+          "source": "k8s.io/apimachinery/pkg/apis/meta/v1",
+          "specifiers": [
+            "metav1"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 183,
+      "hasStructuralAnalysis": true
+    },
+    "CONTRIBUTING.md": {
+      "filePath": "CONTRIBUTING.md",
+      "contentHash": "fb86447ed3266c6d7aeb23e1c6f4b6f558a29e21490fde642763de982aa1e3bd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 179,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/artifacthub-repo.yml": {
+      "filePath": "deploy/helm/kube-argus/artifacthub-repo.yml",
+      "contentHash": "d44595572c7450d9b69cc2ff9a105f524b10c49af084169e96abdf84cd8e25f4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/Chart.yaml": {
+      "filePath": "deploy/helm/kube-argus/Chart.yaml",
+      "contentHash": "1e31e0d1aa6a70ddb31d388fcd15658be8775911a1c990d14d3d5be62099267d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/README.md": {
+      "filePath": "deploy/helm/kube-argus/README.md",
+      "contentHash": "051fc120958176c9e922a7037661948211d2f462fcf388f7765cd145c5ca6e24",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 152,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/templates/_helpers.tpl": {
+      "filePath": "deploy/helm/kube-argus/templates/_helpers.tpl",
+      "contentHash": "4da1e164aa10bc0dbbdac34bc6a2fabaf09582bf4de2f8ca9e69b293d045272f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 38,
+      "hasStructuralAnalysis": false
+    },
+    "deploy/helm/kube-argus/templates/clusterrole.yaml": {
+      "filePath": "deploy/helm/kube-argus/templates/clusterrole.yaml",
+      "contentHash": "238c07e4932982b864d7ef2804ebd24bb7b552ad4b86267a95be1c55a3e507b1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/templates/deployment.yaml": {
+      "filePath": "deploy/helm/kube-argus/templates/deployment.yaml",
+      "contentHash": "74b4a0cac958846aff48354e76159cd79a4c53e461d0ce7c750252ad1ae9e54d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 107,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/templates/ingress.yaml": {
+      "filePath": "deploy/helm/kube-argus/templates/ingress.yaml",
+      "contentHash": "fe5b37d8fba271da01d1f1b4129050014a75204b66a9ea5c2b7220e0a789053b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/templates/service.yaml": {
+      "filePath": "deploy/helm/kube-argus/templates/service.yaml",
+      "contentHash": "2bc4458284e67575f6c09baabab79a882e2cf3b180150174cd17dc4b6db05c52",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/templates/serviceaccount.yaml": {
+      "filePath": "deploy/helm/kube-argus/templates/serviceaccount.yaml",
+      "contentHash": "d848df090f940c1055be91c6164f62df0ff27adc32485fcecec48f4ef20d2a21",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/values.schema.json": {
+      "filePath": "deploy/helm/kube-argus/values.schema.json",
+      "contentHash": "bf154d3971434284aeb4e05fbad4d89e44c0a9f8dad2f82ebf015e31635cbaf3",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 398,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/helm/kube-argus/values.yaml": {
+      "filePath": "deploy/helm/kube-argus/values.yaml",
+      "contentHash": "e095112e0d983528739c2d8353869eeb8c879a57c77c5eba766e23eaa9ff512a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 113,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/k8s/deployment.yaml": {
+      "filePath": "deploy/k8s/deployment.yaml",
+      "contentHash": "75f6f269305ae9fb2452fd80e1c7a63fc3aa28b85bb8af7a97c46c755e113205",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 75,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/k8s/namespace.yaml": {
+      "filePath": "deploy/k8s/namespace.yaml",
+      "contentHash": "5c4c38a8fa2ad0bd25b2b42f4c9d954a70f17b9ac01ba60cb03dfeeb2d82ac8e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/k8s/rbac.yaml": {
+      "filePath": "deploy/k8s/rbac.yaml",
+      "contentHash": "b3eb6f8df2c7ec5843d8de1f5f71e4793d8483236f2a374ebd22c6bb9d46f926",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 64,
+      "hasStructuralAnalysis": true
+    },
+    "deploy/k8s/secret.yaml.example": {
+      "filePath": "deploy/k8s/secret.yaml.example",
+      "contentHash": "8979d2ab24152eba88e1db241f17ce5455373a1837e6b9ac6b1b493d109733e1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 39,
+      "hasStructuralAnalysis": false
+    },
+    "docker-compose.yaml": {
+      "filePath": "docker-compose.yaml",
+      "contentHash": "84c8aa8e5e765423425d7292aa245a2901f832f88c1198c92ff42fb7f396a71c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 26,
+      "hasStructuralAnalysis": true
+    },
+    "Dockerfile": {
+      "filePath": "Dockerfile",
+      "contentHash": "cbb2df452885652319f9cc71a6b045a49f18b9ac096304ce33dc42f5f28b8057",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "docs/index.html": {
+      "filePath": "docs/index.html",
+      "contentHash": "f64c8e11ae8eb56cfcba6df65079c36262fe15e832b825b2c9f25a279713303b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1085,
+      "hasStructuralAnalysis": false
+    },
+    "go.mod": {
+      "filePath": "go.mod",
+      "contentHash": "f3d70a92604d30753dd8c0024efeb646cfb5f109d91c4df931ab5f85ad68feca",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 61,
+      "hasStructuralAnalysis": false
+    },
+    "go.sum": {
+      "filePath": "go.sum",
+      "contentHash": "c20ca26b7603c8c20776b4ff5a0bf552fbebc80b8d1c93ea2e5c394c27cafc6c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 157,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "c85d54ea956521d2740fd3e212ea31aa349c3222e21b625bbf075bcc8bf1e1e6",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 399,
+      "hasStructuralAnalysis": true
+    },
+    "SECURITY.md": {
+      "filePath": "SECURITY.md",
+      "contentHash": "968f31ad01961f6f32f65fa62a8e2c88cb2e11265f3dc90bb255ebb4598a7091",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "web/eslint.config.js": {
+      "filePath": "web/eslint.config.js",
+      "contentHash": "4efe97b16d1200fac0eaf07aa00930a8668b1f96a0be1891ace8c1e712ff0ccb",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@eslint/js",
+          "specifiers": [
+            "js"
+          ]
+        },
+        {
+          "source": "globals",
+          "specifiers": [
+            "globals"
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-hooks",
+          "specifiers": [
+            "reactHooks"
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-refresh",
+          "specifiers": [
+            "reactRefresh"
+          ]
+        },
+        {
+          "source": "typescript-eslint",
+          "specifiers": [
+            "tseslint"
+          ]
+        },
+        {
+          "source": "eslint/config",
+          "specifiers": [
+            "defineConfig",
+            "globalIgnores"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "web/index.html": {
+      "filePath": "web/index.html",
+      "contentHash": "4d7604c71160ee3faa0b4d3afc9d7813430bc4794d0b1eb7067a62c79d27c130",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": false
+    },
+    "web/package.json": {
+      "filePath": "web/package.json",
+      "contentHash": "3e3e77c553c75a265c3c975d7cae8c08adb0de0ae138680eba61baab940e097d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "web/postcss.config.js": {
+      "filePath": "web/postcss.config.js",
+      "contentHash": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/App.tsx": {
+      "filePath": "web/src/App.tsx",
+      "contentHash": "01c141b059f43de24ade40e6f60dc88da59b5938314a2ce394f8980a31faa1a5",
+      "functions": [
+        {
+          "name": "App",
+          "params": [],
+          "exported": false,
+          "lineCount": 422
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef",
+            "Fragment",
+            "lazy",
+            "Suspense"
+          ]
+        },
+        {
+          "source": "./types",
+          "specifiers": [
+            "UserInfo",
+            "SearchResult"
+          ]
+        },
+        {
+          "source": "./context/AuthContext",
+          "specifiers": [
+            "AuthCtx"
+          ]
+        },
+        {
+          "source": "./context/ThemeContext",
+          "specifiers": [
+            "useTheme"
+          ]
+        },
+        {
+          "source": "./hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "./components/ui/Atoms",
+          "specifiers": [
+            "Spinner",
+            "UserAvatar"
+          ]
+        },
+        {
+          "source": "./components/ErrorBoundary",
+          "specifiers": [
+            "ErrorBoundary"
+          ]
+        },
+        {
+          "source": "./components/modals/SearchModal",
+          "specifiers": [
+            "SearchModal"
+          ]
+        },
+        {
+          "source": "./components/modals/AuditTrailModal",
+          "specifiers": [
+            "AuditTrailModal"
+          ]
+        },
+        {
+          "source": "./components/modals/OnlineUsersModal",
+          "specifiers": [
+            "OnlineUsersModal"
+          ]
+        },
+        {
+          "source": "./components/modals/SettingsModal",
+          "specifiers": [
+            "SettingsModal"
+          ]
+        },
+        {
+          "source": "./components/modals/InfoPopover",
+          "specifiers": [
+            "InfoPopover"
+          ]
+        },
+        {
+          "source": "./layout/UserMenuDropdown",
+          "specifiers": [
+            "UserMenuDropdown"
+          ]
+        },
+        {
+          "source": "./layout/NamespacePicker",
+          "specifiers": [
+            "NamespacePicker"
+          ]
+        },
+        {
+          "source": "./routing",
+          "specifiers": [
+            "TABS",
+            "parseRoute"
+          ]
+        },
+        {
+          "source": "./routing",
+          "specifiers": [
+            "TabId"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 466,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ErrorBoundary.tsx": {
+      "filePath": "web/src/components/ErrorBoundary.tsx",
+      "contentHash": "d57bc35472745205f9c59c58e1b3080d57d482b192835f9cb9d00596dba81177",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ErrorBoundary",
+          "methods": [
+            "getDerivedStateFromError",
+            "componentDidCatch",
+            "render"
+          ],
+          "properties": [
+            "state"
+          ],
+          "exported": true,
+          "lineCount": 40
+        }
+      ],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "Component"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "ReactNode",
+            "ErrorInfo"
+          ]
+        }
+      ],
+      "exports": [
+        "ErrorBoundary"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/AuditTrailModal.tsx": {
+      "filePath": "web/src/components/modals/AuditTrailModal.tsx",
+      "contentHash": "f49efee1594f4411ac263b7522e6d49e670e60dcf86afa62aaac9ee004fdd944",
+      "functions": [
+        {
+          "name": "Spinner",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "dedupKey",
+          "params": [
+            "e"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "AuditTrailModal",
+          "params": [
+            "{ deltas = [], onClose }"
+          ],
+          "exported": true,
+          "lineCount": 109
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback"
+          ]
+        }
+      ],
+      "exports": [
+        "AUDIT_ACTION_STYLE",
+        "AuditTrailModal"
+      ],
+      "totalLines": 145,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/DrainWizardModal.tsx": {
+      "filePath": "web/src/components/modals/DrainWizardModal.tsx",
+      "contentHash": "7dc043d8ff94018b69a6a6d2cef29572839d28895fb788d1e7af116d7b13ef24",
+      "functions": [
+        {
+          "name": "Spinner",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "Btn",
+          "params": [
+            "{ children, onClick, variant = 'default', disabled, small }"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "useDrainBg",
+          "params": [],
+          "exported": true,
+          "lineCount": 24
+        },
+        {
+          "name": "DrainBgBanner",
+          "params": [
+            "{ bg, onDismiss }"
+          ],
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "DrainWizardModal",
+          "params": [
+            "{ nodeName, onClose, onDrained, onBackground }"
+          ],
+          "exported": true,
+          "lineCount": 181
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ]
+        }
+      ],
+      "exports": [
+        "useDrainBg",
+        "DrainBgBanner",
+        "DrainWizardModal"
+      ],
+      "totalLines": 260,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/InfoPopover.tsx": {
+      "filePath": "web/src/components/modals/InfoPopover.tsx",
+      "contentHash": "f1ca09b2ef19eea1fcd7c6ec3b353cd2eaa52b5941469df22db2de2504df64a0",
+      "functions": [
+        {
+          "name": "InfoPopover",
+          "params": [
+            "{ tab, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 55
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useRef",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "TABS",
+        "TAB_DETAIL",
+        "InfoPopover"
+      ],
+      "totalLines": 144,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/JITRequestModal.tsx": {
+      "filePath": "web/src/components/modals/JITRequestModal.tsx",
+      "contentHash": "603f7e8860effecf4ab1b71557de9e0362b9cd045a0dc6e93f5b05144859fad9",
+      "functions": [
+        {
+          "name": "JITRequestModal",
+          "params": [
+            "{ ns, pod, ownerKind, ownerName, accessType, onClose, onSubmitted }"
+          ],
+          "exported": true,
+          "lineCount": 109
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        }
+      ],
+      "exports": [
+        "JITRequestModal"
+      ],
+      "totalLines": 112,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/OnlineUsersModal.tsx": {
+      "filePath": "web/src/components/modals/OnlineUsersModal.tsx",
+      "contentHash": "8f56fcf9e6bbbad09d1e5a171e474d55ad4e76cd2b6cff8daeef352fccdebc4b",
+      "functions": [
+        {
+          "name": "OnlineUsersModal",
+          "params": [
+            "{ currentEmail, users, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 58
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "OnlineUsersModal"
+      ],
+      "totalLines": 75,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/SearchModal.tsx": {
+      "filePath": "web/src/components/modals/SearchModal.tsx",
+      "contentHash": "969f4ee2bac7995b4187b82a036d3191b885943ef33a9278d4d2d94f1aef14d1",
+      "functions": [
+        {
+          "name": "SearchModal",
+          "params": [
+            "{ onClose, onSelect }"
+          ],
+          "exported": true,
+          "lineCount": 73
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ]
+        }
+      ],
+      "exports": [
+        "SearchModal"
+      ],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/SettingsModal.tsx": {
+      "filePath": "web/src/components/modals/SettingsModal.tsx",
+      "contentHash": "351a666346d9b2679d788a067f0ffe247ae0a69d6561ce089579466f7826e885",
+      "functions": [
+        {
+          "name": "Spinner",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "WebhookSection",
+          "params": [
+            "{ showToast }"
+          ],
+          "exported": false,
+          "lineCount": 213
+        },
+        {
+          "name": "SettingsModal",
+          "params": [
+            "{ onClose }"
+          ],
+          "exported": true,
+          "lineCount": 254
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "SettingsModal"
+      ],
+      "totalLines": 477,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/modals/YamlModal.tsx": {
+      "filePath": "web/src/components/modals/YamlModal.tsx",
+      "contentHash": "d0d7869e692e842c641698e137b74d2abc3df9aba345ed3ac9629e62648bc7cd",
+      "functions": [
+        {
+          "name": "useAuth",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "Spinner",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "highlightYaml",
+          "params": [
+            "text"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "YamlModal",
+          "params": [
+            "{ kind, ns, name, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 124
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useContext",
+            "createContext"
+          ]
+        },
+        {
+          "source": "js-yaml",
+          "specifiers": [
+            "yaml"
+          ]
+        }
+      ],
+      "exports": [
+        "highlightYaml",
+        "YamlModal"
+      ],
+      "totalLines": 153,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/Atoms.tsx": {
+      "filePath": "web/src/components/ui/Atoms.tsx",
+      "contentHash": "22d45f177460116e3454c09a80b4406213ae9343bf8db41f93c55c98452d842c",
+      "functions": [
+        {
+          "name": "Pill",
+          "params": [
+            "{ children, color }"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "StatusDot",
+          "params": [
+            "{ ok }"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "Btn",
+          "params": [
+            "{ children, onClick, variant = 'default', disabled, small }"
+          ],
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "SizingBadge",
+          "params": [
+            "{ resource, sizing }"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "Spinner",
+          "params": [],
+          "exported": true,
+          "lineCount": 8
+        },
+        {
+          "name": "MiniStat",
+          "params": [
+            "{ label, value, sub, color = 'text-white', icon, onClick }"
+          ],
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "UserAvatar",
+          "params": [
+            "{ email }"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "ContainerStateBadge",
+          "params": [
+            "{ state, reason }"
+          ],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "Pill",
+        "StatusDot",
+        "Btn",
+        "SizingBadge",
+        "Spinner",
+        "MiniStat",
+        "UserAvatar",
+        "ContainerStateBadge"
+      ],
+      "totalLines": 67,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/FullscreenBtn.tsx": {
+      "filePath": "web/src/components/ui/FullscreenBtn.tsx",
+      "contentHash": "8dc9caacd628d409e6cd0c39b89e7b0dd96c6d3cd16c6b5cad38b8ff3feefbd5",
+      "functions": [
+        {
+          "name": "FullscreenBtn",
+          "params": [
+            "{ active, onEnter, onExit }"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "FullscreenBtn"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/K9sBar.tsx": {
+      "filePath": "web/src/components/ui/K9sBar.tsx",
+      "contentHash": "0bf684afdb85e1ace447c9a1a4264ae430769c19acf1c20a4405e336348d1f5b",
+      "functions": [
+        {
+          "name": "K9sBar",
+          "params": [
+            "{ pct, large }"
+          ],
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "Celld",
+          "params": [
+            "{ k, changed, className, children }"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useRef",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "K9sBar",
+        "Celld"
+      ],
+      "totalLines": 25,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/MetricChart.tsx": {
+      "filePath": "web/src/components/ui/MetricChart.tsx",
+      "contentHash": "820f35ab7503b458f8a2d80ea89536d3a7ad5cab8213859e71315fc235b39ed6",
+      "functions": [
+        {
+          "name": "isLightTheme",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "chartColors",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "seriesLastVal",
+          "params": [
+            "series"
+          ],
+          "returnType": "number",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "fmtBytes",
+          "params": [
+            "v"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useMemo",
+            "memo"
+          ]
+        },
+        {
+          "source": "recharts",
+          "specifiers": [
+            "ResponsiveContainer",
+            "AreaChart",
+            "Area",
+            "XAxis",
+            "YAxis",
+            "Tooltip",
+            "CartesianGrid",
+            "ReferenceLine"
+          ]
+        }
+      ],
+      "exports": [
+        "chartColors",
+        "refColor",
+        "seriesLastVal",
+        "fmtBytes",
+        "MetricChart",
+        "METRIC_RANGES"
+      ],
+      "totalLines": 121,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/MiniSparkline.tsx": {
+      "filePath": "web/src/components/ui/MiniSparkline.tsx",
+      "contentHash": "b7eb932a390b6d1195f8505f0fa9287e9b20fb95131b69e802894e9fd3eeb61a",
+      "functions": [
+        {
+          "name": "fmtMetric",
+          "params": [
+            "v",
+            "unit"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "MiniSparkline",
+          "params": [
+            "{ points, color, used, limit, unit }"
+          ],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "fmtMetric",
+        "MiniSparkline"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/ResourceBar.tsx": {
+      "filePath": "web/src/components/ui/ResourceBar.tsx",
+      "contentHash": "0f8547837a28574de51823c5d495ff41a0bb6a55c8b3b6fdab8037883503f962",
+      "functions": [
+        {
+          "name": "ResourceBar",
+          "params": [
+            "{ used, req, lim, label, unit }"
+          ],
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "ResourceBar"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/ui/RestartTimeline.tsx": {
+      "filePath": "web/src/components/ui/RestartTimeline.tsx",
+      "contentHash": "83c2625a2347fbcdd1b2a93e7181ab558c177de3cf2bbea8ca82d291278d916f",
+      "functions": [
+        {
+          "name": "isLight",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "reasonColor",
+          "params": [
+            "reason"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "memo"
+          ]
+        },
+        {
+          "source": "recharts",
+          "specifiers": [
+            "ResponsiveContainer",
+            "ScatterChart",
+            "Scatter",
+            "XAxis",
+            "YAxis",
+            "Tooltip",
+            "CartesianGrid",
+            "Cell"
+          ]
+        }
+      ],
+      "exports": [
+        "reasonColor",
+        "RestartTimeline"
+      ],
+      "totalLines": 144,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/ConfigView.tsx": {
+      "filePath": "web/src/components/views/ConfigView.tsx",
+      "contentHash": "aa7cd41605046c78be52b08a003f50ec5e5f8336c648b1c436d890979a30ee30",
+      "functions": [
+        {
+          "name": "ConfigDataPanel",
+          "params": [
+            "{ item, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 76
+        },
+        {
+          "name": "ConfigView",
+          "params": [
+            "{ namespace }"
+          ],
+          "exported": true,
+          "lineCount": 132
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useMemo"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "ConfigItem",
+            "ConfigDataResp"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../modals/YamlModal",
+          "specifiers": [
+            "YamlModal"
+          ]
+        }
+      ],
+      "exports": [
+        "ConfigDataPanel",
+        "ConfigView"
+      ],
+      "totalLines": 218,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/CronJobDetailView.tsx": {
+      "filePath": "web/src/components/views/CronJobDetailView.tsx",
+      "contentHash": "3b5d56d1806b041076ce788b1bbdb2f4bc18033e0d4f4c0a13ca6363125d8acb",
+      "functions": [
+        {
+          "name": "CronJobDetailView",
+          "params": [
+            "{ ns, name, onBack, onPod }"
+          ],
+          "exported": true,
+          "lineCount": 162
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../modals/JITRequestModal",
+          "specifiers": [
+            "JITRequestModal"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "CronJobDetailView"
+      ],
+      "totalLines": 173,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/EventsView.tsx": {
+      "filePath": "web/src/components/views/EventsView.tsx",
+      "contentHash": "0bb9de2fa9ee007b0c6051cf969c10fc336c1faab5c0437025d91f3b7a90ef57",
+      "functions": [
+        {
+          "name": "EventsView",
+          "params": [
+            "{ namespace }"
+          ],
+          "exported": true,
+          "lineCount": 92
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "ClusterEvent"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "EventsView"
+      ],
+      "totalLines": 98,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/HPADetailView.tsx": {
+      "filePath": "web/src/components/views/HPADetailView.tsx",
+      "contentHash": "c94e0f3869169d5841916f9584d2d48729c6da4c6d04301682a96450c7710da9",
+      "functions": [
+        {
+          "name": "HPADetailView",
+          "params": [
+            "{ ns, name, onBack }"
+          ],
+          "exported": true,
+          "lineCount": 170
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../types",
+          "specifiers": [
+            "HPADescData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "HPADetailView"
+      ],
+      "totalLines": 175,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/HPAView.tsx": {
+      "filePath": "web/src/components/views/HPAView.tsx",
+      "contentHash": "7044307dda9dfd9a70d8ebdb88bf542f8545dbf23b64eb0c6902fd317c2eb3cf",
+      "functions": [
+        {
+          "name": "HPAView",
+          "params": [
+            "{ namespace, onHPA }"
+          ],
+          "exported": true,
+          "lineCount": 97
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "HPA"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../modals/YamlModal",
+          "specifiers": [
+            "YamlModal"
+          ]
+        }
+      ],
+      "exports": [
+        "HPAView"
+      ],
+      "totalLines": 104,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/IngressesView.tsx": {
+      "filePath": "web/src/components/views/IngressesView.tsx",
+      "contentHash": "acd088a544f2b26033706ec606670669eae6931a66d48c4f10f6c0f49990521a",
+      "functions": [
+        {
+          "name": "IngressDetailView",
+          "params": [
+            "{ ns, name, onBack }"
+          ],
+          "exported": true,
+          "lineCount": 165
+        },
+        {
+          "name": "IngressesView",
+          "params": [
+            "{ namespace, onIngress }"
+          ],
+          "exported": true,
+          "lineCount": 87
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Ingress",
+            "IngressDescData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "IngressDetailView",
+        "IngressesView"
+      ],
+      "totalLines": 259,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/JITRequestsView.tsx": {
+      "filePath": "web/src/components/views/JITRequestsView.tsx",
+      "contentHash": "162d498b5523aed86f76efba697d62d9772de0c970c79ad0e952a305d2bb4d20",
+      "functions": [
+        {
+          "name": "timeAgo",
+          "params": [
+            "dateStr"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "timeRemaining",
+          "params": [
+            "expiresAt"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "parseDurationMs",
+          "params": [
+            "d"
+          ],
+          "returnType": "number",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "JITRequestsModal",
+          "params": [
+            "{ onClose }"
+          ],
+          "exported": true,
+          "lineCount": 149
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        }
+      ],
+      "exports": [
+        "JITRequestsModal"
+      ],
+      "totalLines": 203,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/NodeDescribeView.tsx": {
+      "filePath": "web/src/components/views/NodeDescribeView.tsx",
+      "contentHash": "471e5910f4c19de59b41595b5c0a9e896f2bfee16fe2efd7fe1e0d982c214aae",
+      "functions": [
+        {
+          "name": "NodePodHeatmap",
+          "params": [
+            "{ nodeName, highlightPod, onPod }"
+          ],
+          "exported": true,
+          "lineCount": 101
+        },
+        {
+          "name": "NodeMetricsPanel",
+          "params": [
+            "{ nodeName }"
+          ],
+          "exported": false,
+          "lineCount": 56
+        },
+        {
+          "name": "NodeDescribeView",
+          "params": [
+            "{ name, onBack, onPod }"
+          ],
+          "exported": true,
+          "lineCount": 258
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "NodeDescData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Btn",
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../ui/MetricChart",
+          "specifiers": [
+            "MetricChart",
+            "METRIC_RANGES",
+            "seriesLastVal",
+            "fmtBytes",
+            "refColor"
+          ]
+        },
+        {
+          "source": "../../hooks/useMetrics",
+          "specifiers": [
+            "useMetrics"
+          ]
+        },
+        {
+          "source": "../modals/DrainWizardModal",
+          "specifiers": [
+            "DrainWizardModal"
+          ]
+        },
+        {
+          "source": "../../hooks/useDrainBg",
+          "specifiers": [
+            "DrainBgBanner",
+            "useDrainBg"
+          ]
+        }
+      ],
+      "exports": [
+        "NodePodHeatmap",
+        "NodeDescribeView"
+      ],
+      "totalLines": 431,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/NodesView.tsx": {
+      "filePath": "web/src/components/views/NodesView.tsx",
+      "contentHash": "890949f9347d5f6796b326521d60cb18b5e7e127b9a7f7619f159d587fa1695c",
+      "functions": [
+        {
+          "name": "useDrainBg",
+          "params": [],
+          "exported": false,
+          "lineCount": 24
+        },
+        {
+          "name": "DrainBgBanner",
+          "params": [
+            "{ bg, onDismiss }"
+          ],
+          "exported": false,
+          "lineCount": 23
+        },
+        {
+          "name": "DrainWizardModal",
+          "params": [
+            "{ nodeName, onClose, onDrained, onBackground }"
+          ],
+          "exported": false,
+          "lineCount": 181
+        },
+        {
+          "name": "NodesView",
+          "params": [
+            "{ onNode, poolFilter, onPoolChange }"
+          ],
+          "exported": true,
+          "lineCount": 180
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "NodeDetail"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Btn",
+            "Spinner",
+            "StatusDot"
+          ]
+        }
+      ],
+      "exports": [
+        "NodesView"
+      ],
+      "totalLines": 423,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/OverviewView.tsx": {
+      "filePath": "web/src/components/views/OverviewView.tsx",
+      "contentHash": "fdd5e9d124ba9d1c8f5c592ad8723d5777b3749ffb08325a5e98dba37e3c5075",
+      "functions": [
+        {
+          "name": "useFullscreen",
+          "params": [],
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "FullscreenBtn",
+          "params": [
+            "{ active, onEnter, onExit }"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "OverviewView",
+          "params": [
+            "{ onNodeTap, onTab }"
+          ],
+          "exported": true,
+          "lineCount": 278
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "OverviewData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner",
+            "MiniStat"
+          ]
+        },
+        {
+          "source": "../ui/K9sBar",
+          "specifiers": [
+            "K9sBar",
+            "Celld"
+          ]
+        }
+      ],
+      "exports": [
+        "OverviewView"
+      ],
+      "totalLines": 319,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/PodDetailView.tsx": {
+      "filePath": "web/src/components/views/PodDetailView.tsx",
+      "contentHash": "1b0db113cda374321de1c4d4aa19c4e968882fe0e6836c9dc7ec10e07ca1aa12",
+      "functions": [
+        {
+          "name": "ResourceBar",
+          "params": [
+            "{ used, req, lim, label, unit }"
+          ],
+          "exported": false,
+          "lineCount": 23
+        },
+        {
+          "name": "useAIStream",
+          "params": [],
+          "exported": false,
+          "lineCount": 58
+        },
+        {
+          "name": "simpleMarkdown",
+          "params": [
+            "md"
+          ],
+          "returnType": "string",
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "AIResponsePanel",
+          "params": [
+            "{ text, loading, error }"
+          ],
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "AIDiagnoseButton",
+          "params": [
+            "{ namespace, pod }"
+          ],
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "PodMetricsPanel",
+          "params": [
+            "{ namespace, pod }"
+          ],
+          "exported": true,
+          "lineCount": 123
+        },
+        {
+          "name": "PodDetailView",
+          "params": [
+            "{ ns, name, onBack, onWorkload }"
+          ],
+          "exported": true,
+          "lineCount": 407
+        },
+        {
+          "name": "PodShell",
+          "params": [
+            "{ ns, name, container, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 92
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef",
+            "useMemo"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Evt",
+            "PodDescribe"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner",
+            "StatusDot",
+            "ContainerStateBadge"
+          ]
+        },
+        {
+          "source": "./WorkloadDetailView",
+          "specifiers": [
+            "MetricChart",
+            "useMetrics",
+            "METRIC_RANGES",
+            "YamlModal",
+            "refColor"
+          ]
+        },
+        {
+          "source": "../ui/RestartTimeline",
+          "specifiers": [
+            "RestartTimeline"
+          ]
+        },
+        {
+          "source": "./WorkloadDetailView",
+          "specifiers": [
+            "MetricsData",
+            "RefLine"
+          ]
+        },
+        {
+          "source": "../modals/JITRequestModal",
+          "specifiers": [
+            "JITRequestModal"
+          ]
+        }
+      ],
+      "exports": [
+        "PodMetricsPanel",
+        "PodDetailView",
+        "PodShell"
+      ],
+      "totalLines": 811,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/PodsView.tsx": {
+      "filePath": "web/src/components/views/PodsView.tsx",
+      "contentHash": "c7b68a7f41eb90a2814b717e16da7b5cf9d7118f7e7ebdd6e6b76238fe478899",
+      "functions": [
+        {
+          "name": "ResourceBar",
+          "params": [
+            "{ used, req, lim, label, unit }"
+          ],
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "fmtMetric",
+          "params": [
+            "v",
+            "unit"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "MiniSparkline",
+          "params": [
+            "{ points, color, used, limit, unit }"
+          ],
+          "exported": false,
+          "lineCount": 28
+        },
+        {
+          "name": "PodsView",
+          "params": [
+            "{ namespace, onPod }"
+          ],
+          "exported": true,
+          "lineCount": 219
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Pod"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner",
+            "StatusDot",
+            "SizingBadge"
+          ]
+        }
+      ],
+      "exports": [
+        "ResourceBar",
+        "PodsView"
+      ],
+      "totalLines": 287,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/PVCsView.tsx": {
+      "filePath": "web/src/components/views/PVCsView.tsx",
+      "contentHash": "78669e562e56e970aa95d3fa6400b6c36c424b947d89a682351633f9be2c3355",
+      "functions": [
+        {
+          "name": "PVCsView",
+          "params": [
+            "{ namespace }"
+          ],
+          "exported": true,
+          "lineCount": 226
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "Fragment"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../modals/YamlModal",
+          "specifiers": [
+            "YamlModal"
+          ]
+        }
+      ],
+      "exports": [
+        "PVCsView"
+      ],
+      "totalLines": 237,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/ServiceDetailView.tsx": {
+      "filePath": "web/src/components/views/ServiceDetailView.tsx",
+      "contentHash": "5b454fb049359d6f776a6f29e1b1a18a3ed159fafbb3e4a575a0d8766b7457f9",
+      "functions": [
+        {
+          "name": "ServiceDetailView",
+          "params": [
+            "{ ns, name, onBack }"
+          ],
+          "exported": true,
+          "lineCount": 205
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../types",
+          "specifiers": [
+            "ServiceDescData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "ServiceDetailView"
+      ],
+      "totalLines": 210,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/ServicesView.tsx": {
+      "filePath": "web/src/components/views/ServicesView.tsx",
+      "contentHash": "c2962d343f408c05b99c135223377d818b9e630eba5b789c755b8287a8f748e1",
+      "functions": [
+        {
+          "name": "ServicesView",
+          "params": [
+            "{ namespace, onService }"
+          ],
+          "exported": true,
+          "lineCount": 78
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Service"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../modals/YamlModal",
+          "specifiers": [
+            "YamlModal"
+          ]
+        }
+      ],
+      "exports": [
+        "ServicesView"
+      ],
+      "totalLines": 85,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/SpotAdvisorView.tsx": {
+      "filePath": "web/src/components/views/SpotAdvisorView.tsx",
+      "contentHash": "dbddcf34d067080bb84f7d1ae5b5f5f3c2c9099f11a4bef64761dee0fea06319",
+      "functions": [
+        {
+          "name": "CostAllocationPanel",
+          "params": [],
+          "exported": true,
+          "lineCount": 148
+        },
+        {
+          "name": "SpotAdvisorView",
+          "params": [
+            "{ AISpotAnalysis }"
+          ],
+          "exported": true,
+          "lineCount": 349
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "SpotAdvisorData"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "CostAllocationPanel",
+        "SpotAdvisorView"
+      ],
+      "totalLines": 508,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/SpotInterruptionsView.tsx": {
+      "filePath": "web/src/components/views/SpotInterruptionsView.tsx",
+      "contentHash": "33b919c6631d33ed47fa1fa45b9072efa748ea632fd6692cc45dac82060670d7",
+      "functions": [
+        {
+          "name": "SpotInterruptionsView",
+          "params": [
+            "{ onNode, hiddenReasons, onToggleReason }"
+          ],
+          "exported": true,
+          "lineCount": 79
+        },
+        {
+          "name": "PodResilienceView",
+          "params": [],
+          "exported": true,
+          "lineCount": 89
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useRef"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        }
+      ],
+      "exports": [
+        "SPOT_REASONS",
+        "SpotInterruptionsView",
+        "PodResilienceView"
+      ],
+      "totalLines": 179,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/TopologySpreadView.tsx": {
+      "filePath": "web/src/components/views/TopologySpreadView.tsx",
+      "contentHash": "eb2134827bc47dd816d3e4d75c62ac8ae8cf1475369db446851bf20016558360",
+      "functions": [
+        {
+          "name": "TopologySpreadView",
+          "params": [],
+          "exported": true,
+          "lineCount": 210
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        }
+      ],
+      "exports": [
+        "TopologySpreadView"
+      ],
+      "totalLines": 220,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/TroubledPodsView.tsx": {
+      "filePath": "web/src/components/views/TroubledPodsView.tsx",
+      "contentHash": "b89eea6e47756aaf3cc347cd04c11b30acd0bcbd584516f075dfb6941a3e9c84",
+      "functions": [
+        {
+          "name": "TroubledPodsView",
+          "params": [
+            "{ onPod }"
+          ],
+          "exported": true,
+          "lineCount": 112
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Pod"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "useFullscreen"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../ui/FullscreenBtn",
+          "specifiers": [
+            "FullscreenBtn"
+          ]
+        }
+      ],
+      "exports": [
+        "TroubledPodsView"
+      ],
+      "totalLines": 119,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/WorkloadDetailView.tsx": {
+      "filePath": "web/src/components/views/WorkloadDetailView.tsx",
+      "contentHash": "a6e4dbb71ab878443e994e5c21b99fce9d0bda5ee81a4ffb7808ee5841595a97",
+      "functions": [
+        {
+          "name": "isLightTheme",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "chartColors",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "useMetrics",
+          "params": [
+            "url",
+            "timeRange"
+          ],
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "seriesLastVal",
+          "params": [
+            "series"
+          ],
+          "returnType": "number",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "fmtBytes",
+          "params": [
+            "v"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "MetricChart",
+          "params": [
+            "{ title, series, unit, height = 120, refLines }"
+          ],
+          "exported": true,
+          "lineCount": 84
+        },
+        {
+          "name": "YamlModal",
+          "params": [
+            "{ kind, ns, name, onClose }"
+          ],
+          "exported": true,
+          "lineCount": 124
+        },
+        {
+          "name": "WorkloadDetailView",
+          "params": [
+            "{ ns, name, kind, onBack, onPod }"
+          ],
+          "exported": true,
+          "lineCount": 377
+        },
+        {
+          "name": "AggLogsView",
+          "params": [
+            "{ ns, name, kind }"
+          ],
+          "exported": true,
+          "lineCount": 110
+        },
+        {
+          "name": "DependencyGraph",
+          "params": [
+            "{ ns, name, kind }"
+          ],
+          "exported": true,
+          "lineCount": 117
+        },
+        {
+          "name": "SizingPanel",
+          "params": [
+            "{ namespace, name, kind }"
+          ],
+          "exported": true,
+          "lineCount": 58
+        },
+        {
+          "name": "WorkloadMetricsPanel",
+          "params": [
+            "{ namespace, name, kind }"
+          ],
+          "exported": true,
+          "lineCount": 107
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef",
+            "useMemo"
+          ]
+        },
+        {
+          "source": "recharts",
+          "specifiers": [
+            "ResponsiveContainer",
+            "AreaChart",
+            "Area",
+            "XAxis",
+            "YAxis",
+            "Tooltip",
+            "CartesianGrid",
+            "ReferenceLine"
+          ]
+        },
+        {
+          "source": "js-yaml",
+          "specifiers": [
+            "yaml"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Spinner"
+          ]
+        },
+        {
+          "source": "../ui/RestartTimeline",
+          "specifiers": [
+            "RestartTimeline"
+          ]
+        },
+        {
+          "source": "../modals/JITRequestModal",
+          "specifiers": [
+            "JITRequestModal"
+          ]
+        },
+        {
+          "source": "../modals/YamlModal",
+          "specifiers": [
+            "highlightYaml"
+          ]
+        }
+      ],
+      "exports": [
+        "METRIC_RANGES",
+        "chartColors",
+        "refColor",
+        "useMetrics",
+        "seriesLastVal",
+        "fmtBytes",
+        "MetricChart",
+        "YamlModal",
+        "WorkloadDetailView",
+        "AGG_LOG_COLORS",
+        "AggLogsView",
+        "DependencyGraph",
+        "SizingPanel",
+        "WorkloadMetricsPanel"
+      ],
+      "totalLines": 1082,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/components/views/WorkloadsView.tsx": {
+      "filePath": "web/src/components/views/WorkloadsView.tsx",
+      "contentHash": "480b6d982fdd63da4bf6550bb9e50c4cafb4ba9a1052bcc7e538f1b06e563627",
+      "functions": [
+        {
+          "name": "ResourceBar",
+          "params": [
+            "{ used, req, lim, label, unit }"
+          ],
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "WorkloadsView",
+          "params": [
+            "{ namespace, initialKind, onWorkload }"
+          ],
+          "exported": true,
+          "lineCount": 180
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback"
+          ]
+        },
+        {
+          "source": "../../types",
+          "specifiers": [
+            "Workload"
+          ]
+        },
+        {
+          "source": "../../hooks/useFetch",
+          "specifiers": [
+            "useFetch",
+            "post"
+          ]
+        },
+        {
+          "source": "../../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../ui/Atoms",
+          "specifiers": [
+            "Pill",
+            "Btn",
+            "Spinner",
+            "StatusDot"
+          ]
+        },
+        {
+          "source": "../modals/JITRequestModal",
+          "specifiers": [
+            "JITRequestModal"
+          ]
+        }
+      ],
+      "exports": [
+        "ResourceBar",
+        "WorkloadsView"
+      ],
+      "totalLines": 212,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/context/AuthContext.tsx": {
+      "filePath": "web/src/context/AuthContext.tsx",
+      "contentHash": "08bec50c68d2dcf351ff8b318765e7782e05d1929bc8d3ed3bb29973bef62494",
+      "functions": [
+        {
+          "name": "useAuth",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "createContext",
+            "useContext"
+          ]
+        },
+        {
+          "source": "../types",
+          "specifiers": [
+            "UserInfo"
+          ]
+        }
+      ],
+      "exports": [
+        "AuthCtx",
+        "useAuth"
+      ],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/context/ThemeContext.tsx": {
+      "filePath": "web/src/context/ThemeContext.tsx",
+      "contentHash": "8dbb321376f64ecc580dc9e35be19ffb9b08612621fea54400c091f16dac2a0e",
+      "functions": [
+        {
+          "name": "useTheme",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "ThemeProvider",
+          "params": [
+            "{ children }"
+          ],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "createContext",
+            "useContext",
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useCallback",
+            "ReactNode"
+          ]
+        }
+      ],
+      "exports": [
+        "useTheme",
+        "ThemeProvider"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/hooks/useAIStream.ts": {
+      "filePath": "web/src/hooks/useAIStream.ts",
+      "contentHash": "8456255f62963b892f0cfb24c8ace05e01c024da12156a84ffb092e3e99618f6",
+      "functions": [
+        {
+          "name": "useAIStream",
+          "params": [],
+          "exported": true,
+          "lineCount": 58
+        },
+        {
+          "name": "simpleMarkdown",
+          "params": [
+            "md"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useCallback",
+            "useRef"
+          ]
+        }
+      ],
+      "exports": [
+        "useAIStream",
+        "simpleMarkdown"
+      ],
+      "totalLines": 88,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/hooks/useDrainBg.tsx": {
+      "filePath": "web/src/hooks/useDrainBg.tsx",
+      "contentHash": "03f3bab429d0d0bf851d04f6d4ac91132ba982603caa75b67ca94170e174f506",
+      "functions": [
+        {
+          "name": "useDrainBg",
+          "params": [],
+          "exported": true,
+          "lineCount": 24
+        },
+        {
+          "name": "DrainBgBanner",
+          "params": [
+            "{ bg, onDismiss }"
+          ],
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useCallback"
+          ]
+        }
+      ],
+      "exports": [
+        "useDrainBg",
+        "DrainBgBanner"
+      ],
+      "totalLines": 53,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/hooks/useFavorites.ts": {
+      "filePath": "web/src/hooks/useFavorites.ts",
+      "contentHash": "7cd401ba429790dcbd502715072fec44bc9c6cdd6da144f92cf4077ad727df46",
+      "functions": [
+        {
+          "name": "readFavorites",
+          "params": [
+            "email"
+          ],
+          "returnType": "string[]",
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "writeFavorites",
+          "params": [
+            "email",
+            "favs"
+          ],
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "useFavorites",
+          "params": [
+            "email"
+          ],
+          "exported": true,
+          "lineCount": 15
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useCallback"
+          ]
+        }
+      ],
+      "exports": [
+        "useFavorites"
+      ],
+      "totalLines": 41,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/hooks/useFetch.tsx": {
+      "filePath": "web/src/hooks/useFetch.tsx",
+      "contentHash": "216b556bbc49b210df1d28ac9e38f62a5c0ab81d9d046d9536b4dd2e04263538",
+      "functions": [
+        {
+          "name": "swrHit",
+          "params": [
+            "url"
+          ],
+          "returnType": "T | undefined",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "useFetch",
+          "params": [
+            "url",
+            "ms"
+          ],
+          "exported": true,
+          "lineCount": 39
+        },
+        {
+          "name": "post",
+          "params": [
+            "url"
+          ],
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "useFullscreen",
+          "params": [],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ]
+        }
+      ],
+      "exports": [
+        "useFetch",
+        "post",
+        "useFullscreen"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/hooks/useMetrics.ts": {
+      "filePath": "web/src/hooks/useMetrics.ts",
+      "contentHash": "6ddcb5a36356c2c0ac2706d4c5e5502b28f3377609fa778a2eb7022e9d55fb12",
+      "functions": [
+        {
+          "name": "isLightTheme",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "chartColors",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "useMetrics",
+          "params": [
+            "url",
+            "timeRange"
+          ],
+          "exported": true,
+          "lineCount": 32
+        },
+        {
+          "name": "seriesLastVal",
+          "params": [
+            "series"
+          ],
+          "returnType": "number",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "fmtBytes",
+          "params": [
+            "v"
+          ],
+          "returnType": "string",
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "chartColors",
+        "useMetrics",
+        "METRIC_RANGES",
+        "seriesLastVal",
+        "fmtBytes"
+      ],
+      "totalLines": 57,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/index.css": {
+      "filePath": "web/src/index.css",
+      "contentHash": "79a295ce54f72f6a5b80b42a9d013203d00c688b7b005ed4eb8106daacbd1971",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 417,
+      "hasStructuralAnalysis": false
+    },
+    "web/src/layout/NamespacePicker.tsx": {
+      "filePath": "web/src/layout/NamespacePicker.tsx",
+      "contentHash": "2f90a5c17d8e767ecd4a0d1e8033d9f8a65877e41f6f4426d163918a2e2473ef",
+      "functions": [
+        {
+          "name": "NamespacePicker",
+          "params": [
+            "{ namespaces, value, onChange }"
+          ],
+          "exported": true,
+          "lineCount": 82
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState",
+            "useRef",
+            "useEffect"
+          ]
+        },
+        {
+          "source": "../context/AuthContext",
+          "specifiers": [
+            "useAuth"
+          ]
+        },
+        {
+          "source": "../hooks/useFavorites",
+          "specifiers": [
+            "useFavorites"
+          ]
+        }
+      ],
+      "exports": [
+        "NamespacePicker"
+      ],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/layout/UserMenuDropdown.tsx": {
+      "filePath": "web/src/layout/UserMenuDropdown.tsx",
+      "contentHash": "4487ec778ebeb0d2bc8388331348ad8c346dca78c19c2f4fa73808393d7d9417",
+      "functions": [
+        {
+          "name": "UserMenuDropdown",
+          "params": [
+            "{ email, role, impersonating, onToggleImpersonate, onClose, onAudit, onOnlineUsers, onAccessRequests, onSettings, pendingJITCount, containerRef }"
+          ],
+          "exported": true,
+          "lineCount": 54
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React",
+            "useEffect"
+          ]
+        }
+      ],
+      "exports": [
+        "UserMenuDropdown"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/main.tsx": {
+      "filePath": "web/src/main.tsx",
+      "contentHash": "4998d864a3e17e10b919544b27dfe7adf56c1e362e84201c22b8727944b059a8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "StrictMode"
+          ]
+        },
+        {
+          "source": "react-dom/client",
+          "specifiers": [
+            "createRoot"
+          ]
+        },
+        {
+          "source": "./index.css",
+          "specifiers": []
+        },
+        {
+          "source": "./App",
+          "specifiers": [
+            "App"
+          ]
+        },
+        {
+          "source": "./context/ThemeContext",
+          "specifiers": [
+            "ThemeProvider"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/routing.ts": {
+      "filePath": "web/src/routing.ts",
+      "contentHash": "dbd37a19a731ddba8a91c9b3eca8f9fdc96f1e0124746dbe3c2f7488c4965d6d",
+      "functions": [
+        {
+          "name": "parseRoute",
+          "params": [],
+          "returnType": "{ tab: TabId; pod: { ns: string; name: string } | null; node: string | null; ingress: { ns: string; name: string } | null; workload: { ns: string; name: string; kind: string } | null; service: { ns: string; name: string } | null; hpa: { ns: string; name: string } | null; nodePool: string }",
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "TABS",
+        "parseRoute"
+      ],
+      "totalLines": 39,
+      "hasStructuralAnalysis": true
+    },
+    "web/src/types.ts": {
+      "filePath": "web/src/types.ts",
+      "contentHash": "61ce843dd16f854892304ca2e0fda0ca81de280adb28491d790fac2c0720adfe",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "web/tailwind.config.js": {
+      "filePath": "web/tailwind.config.js",
+      "contentHash": "2fa25a3a9b7b69dfcde54cffc8f6d8b119338334ea0a5f80256b88fe90d34b12",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "web/tsconfig.app.json": {
+      "filePath": "web/tsconfig.app.json",
+      "contentHash": "aa9e68711a716c499b5730aa6664cab7e6a2cb65e9924252cefe2135a4724112",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "web/tsconfig.json": {
+      "filePath": "web/tsconfig.json",
+      "contentHash": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "web/tsconfig.node.json": {
+      "filePath": "web/tsconfig.node.json",
+      "contentHash": "c3dd0fb522feba3596713f51b95bd53d781d845d24aedbfa2ac093d8b39c5120",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "web/vite.config.ts": {
+      "filePath": "web/vite.config.ts",
+      "contentHash": "bc114d277ee8af0e9d2cd64322adedfade6cdb6b43e26e3f77a987385d33c1f7",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "vite",
+          "specifiers": [
+            "defineConfig"
+          ]
+        },
+        {
+          "source": "@vitejs/plugin-react",
+          "specifiers": [
+            "react"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

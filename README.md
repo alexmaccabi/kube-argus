@@ -303,38 +303,45 @@ Settings page UI takes precedence; env vars are a bootstrap fallback for headles
 
 ---
 
+<!-- BEGIN AGENT-OWNED (synthesized from .understand-anything/knowledge-graph.json + recent commit history; safe to regenerate) -->
+
 ## Features
 
 <details>
 <summary><strong>Cluster Overview</strong></summary>
 
-- Live cluster state refreshed every 10 seconds
-- Node status (Ready, NotReady, Draining, Cordoned)
-- Cluster-wide CPU and memory utilisation
-- Warning counts and top resource consumers by namespace
+- Live cluster snapshot rebuilt server-side every 10 seconds and shared across all browsers
+- Node status counts (Ready, NotReady, Cordoned, Draining)
+- Cluster-wide CPU and memory utilisation with allocatable vs. requested breakdowns
+- Top namespaces by pod count and resource consumption
+- Warning counts surfaced from recent Events
 </details>
 
 <details>
 <summary><strong>Node Management</strong></summary>
 
-- All nodes with status, instance type, capacity, and age
-- `kubectl describe`-style detail with live events
-- Drain wizard with PDB preview and streaming progress
-- Pod heatmap for noisy neighbor detection
+- All nodes with status, instance type, allocatable capacity, and age
+- `kubectl describe`-style detail with live events and resident pod list
+- Per-node CPU/memory graphs from Prometheus, with a raw cAdvisor fallback for vanilla clusters
+- Drain wizard with PDB preview, dry-run, and streaming progress that survives page reloads
+- Pod heatmap for noisy-neighbor detection
+- Allocated vs. requested resource view for capacity planning
 - Admin actions: cordon, uncordon, drain
-- Per-node Prometheus metrics
 </details>
 
 <details>
 <summary><strong>Workloads</strong></summary>
 
-- Deployments, StatefulSets, DaemonSets, Jobs, CronJobs
-- Restart and scale directly from the UI
-- Aggregated logs from all pods in one color-coded view
-- ReplicaSet history, rolling update details
+- Deployments, StatefulSets, DaemonSets, Jobs, CronJobs in one searchable list
+- Restart and scale directly from the UI (JIT-gated for viewers)
+- Aggregated logs from every pod in the workload, colour-coded per pod
+- ReplicaSet history and rolling-update details
 - PDB status badges inline
-- Resource right-sizing recommendations (7-day Prometheus data)
-- Config drift detection
+- Resource right-sizing recommendations from 7 days of Prometheus history
+- Configuration drift detection between rendered manifests and live state
+- Init container visibility across all workload types
+- CronJob manual trigger with JIT approval for viewers
+- Topology-spread constraint validation per workload
 </details>
 
 <details>
@@ -342,48 +349,79 @@ Settings page UI takes precedence; env vars are a bootstrap fallback for headles
 
 - Table and card views with search, filters, and sorting
 - Pod sparklines (CPU/MEM trends updated every 10s)
-- Live log streaming with container selector
-- Previous container logs for crash debugging
-- Interactive web shell via WebSocket
-- AI-powered diagnosis for unhealthy pods
-- Restart reason timeline — color-coded scatter chart showing when and why containers restarted
+- Live log streaming with container selector and previous-instance logs for crash debugging
+- Interactive web shell over WebSocket (xterm.js)
+- AI-powered pod diagnosis with streaming LLM responses (any OpenAI-compatible gateway)
+- Restart-reason timeline — colour-coded scatter chart of when and why containers restarted
+- Init container visibility and per-container resource usage
+</details>
+
+<details>
+<summary><strong>Networking & Storage</strong></summary>
+
+- Services with cluster IP, type, ports, endpoints, and pod selector mapping
+- Service detail view with endpoint health and backing pods
+- Ingresses with hosts, paths, TLS, and backend service resolution
+- HorizontalPodAutoscalers with current vs. target metrics and recent scaling events
+- HPA detail view with metric-by-metric breakdown
+- PVCs, PVs, and StorageClasses with bound-pod mapping
+- Click-through navigation between resource graph nodes
+</details>
+
+<details>
+<summary><strong>Configuration & Secrets</strong></summary>
+
+- ConfigMaps and Secrets browsable per namespace
+- YAML viewer/editor for 11 resource kinds with live diff
+- Secret values redacted by default in YAML view, with explicit reveal
+- Drift detection between the rendered chart/manifest and the live object
 </details>
 
 <details>
 <summary><strong>Cost & Optimisation</strong></summary>
 
-- Spot Advisor: risk analysis with consolidation suggestions
+- **Spot Advisor (EKS)**: risk scoring and consolidation recommendations using AWS Spot pricing
+- Spot interruption tracking with cluster resilience score
 - Namespace-level cost allocation
 - Total cluster cost panel (spot + on-demand)
 </details>
 
 <details>
-<summary><strong>Security</strong></summary>
+<summary><strong>Security & Access</strong></summary>
 
-- Three auth modes: Google SSO, generic OIDC, or none
-- Role-based access: admin vs viewer
-- JIT exec access with approval workflow, auto-expiry, and custom durations (up to 7 days)
-- JIT-gated CronJob manual trigger for viewers
-- Audit trail for all actions
-- Online users with presence indicators
-- Runs as non-root (`USER nobody`)
+- Three auth modes: Google SSO, generic OIDC, or none (`DEFAULT_ROLE` controls anonymous access)
+- Role-based access: `admin` vs `viewer`, configurable via OIDC group or admin email list
+- **JIT exec access**: zero-trust shell access with approval workflow, auto-expiry, and custom durations up to 7 days
+- JIT-gated workload restart, scale, and CronJob trigger actions for viewers
+- HMAC-signed session cookies with configurable TTL
+- Optional AWS Secrets Manager bootstrap for the OIDC client secret
+- Full audit trail for logins, pod deletions, scaling actions, exec sessions, and JIT decisions
+- Online users panel with presence indicators
+- Container runs as non-root (`USER nobody`)
 </details>
 
 <details>
-<summary><strong>More Features</strong></summary>
+<summary><strong>Notifications</strong></summary>
 
-- Networking: Services, Ingresses with hosts/paths/TLS
-- Storage: PVCs, PVs, StorageClasses with pod mapping
-- Configuration: ConfigMaps, Secrets with drift detection
-- YAML viewer/editor for 11 resource kinds
-- Topology spread constraint validation
-- Troubled pods / NOC screen with fullscreen mode
-- Spot interruption tracking with resilience scoring
-- Events filtered by namespace
-- Namespace favorites with per-user persistence
-- Init container visibility across all workload types
-- CronJob manual trigger with JIT approval
+- Slack incoming-webhook integration for JIT request events
+- Interactive Slack Approve/Deny buttons when `SLACK_SIGNING_SECRET` is set
+- Generic webhook delivery with HMAC-SHA256 body signing
+- Settings-page UI takes precedence over env vars for runtime reconfiguration
 </details>
+
+<details>
+<summary><strong>Operations & UX</strong></summary>
+
+- Troubled-pods view with fullscreen NOC/wall-screen mode
+- Events view filtered by namespace
+- Namespace favorites with per-user persistence
+- Top-bar k9s-style command bar for quick navigation
+- Light and dark themes
+- Structured JSON logging with configurable `LOG_LEVEL` (`debug` / `info` / `warn` / `error`)
+- Shareable deep links that capture view, filter, and namespace state
+</details>
+
+<!-- END AGENT-OWNED -->
 
 ---
 

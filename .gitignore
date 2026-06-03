@@ -30,3 +30,6 @@ tmp/
 /server
 .kiro/
 .claude/
+
+.understand-anything/intermediate/
+.understand-anything/diff-overlay.json
